@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:optional{
+            color: antiquewhite;
+            background: blueviolet;
+        }
+        input:read-write{
+            color: yellowgreen;
+            background: yellow;
+        }
+        input:invalid{
+            background: brown;
+        }
+    </style>
+</head>
+<body>
+    <h2>sudeo classes are used to apply styles based on conditions also</h2>
+    <h3>those conditions are:</h3>
+    <h4>
+      1.required(you cant submit the form without filling it)<br>
+      2.optional(opposite to required (no need to mention in input tag))<br>
+      3.readonly(only for reading purpose(just to watch)we cant fill the filed)<br>
+      4.read-write(opposite to read-write (noneed to mention in input tag))<br>
+      5.valid(it tells wheather the field valid or not based on (minlength,maxlength,pattern ..etc) )<br>
+      6.disabled(used to buttons for making it action disabled)<br>
+      7.default(to give styles for pseudo classes like checked,selected...etc with(+label))<br>
+      8.in-range & out-of-range(to give styles of sudoclass values like min,max,...etc)<br>
+      9.enabled(opposite for disabled (noneed to mention in input tag))<br>
+      10.empty(this is to apply styles for which we had written nothing inside the tags)<br>
+      11.not(to disselect the ids which we dont want to apply the styles)<br>
+      12.first-child & last-child & nth-child nth-last-child (here we can give numbers & expressions to slect childs)(to give styles for first-childtag in a parent tag(for paragraph & div &li & ol...etc tags))<br>
+      13.nth-last-type(),nth-of-type(),first-of-type,last-of-type(these are tags)<br>
+      14.only-child (for thos having only one child)& only-of-type(for thos only another type of tag)
+       
+
+    </h4>
+    <div>
+        <form>
+            name:<input type="text"readonly><br>
+            email:<input type="text" required><br>
+            phone:<input type="text" >
+                  <input type="submit" disabled>
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
